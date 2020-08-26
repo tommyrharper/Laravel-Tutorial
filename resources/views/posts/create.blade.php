@@ -24,7 +24,7 @@
 
               @if ($errors->has('caption'))
                   <span class="invalid-feedback" role="alert">
-                      <strong>{{ $erros->first('caption') }}</strong>
+                      <strong>{{ $errors->first('caption') }}</strong>
                   </span>
               @endif
         </div>
@@ -35,9 +35,7 @@
           <input type="file" class="form-control-file" id="image" name="image">
 
           @if ($errors->has('image'))
-              <span class="invalid-feedback" role="alert">
-                  <strong>{{ $erros->first('image') }}</strong>
-              </span>
+                  <strong>{{ $errors->first('image') }}</strong>
           @endif
         </div>
 
