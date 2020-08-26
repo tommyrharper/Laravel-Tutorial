@@ -2,7 +2,9 @@
 
 @section('content')
 <div class="container">
-  <form action="">
+  <form action="/p" enctype="multipart/form-data" method="post">
+    @csrf
+
     <div class="row">
       <div class="col-8 offset-2">
 
@@ -15,8 +17,9 @@
             
             <input id="caption" 
                   type="text" 
-                  class="form-control @error('caption') is-invalid @enderror" 
-                  caption="caption" value="{{ old('caption') }}"  
+                  class="form-control @error('caption') is-invalid @enderror"
+                  name="caption"
+                  value="{{ old('caption') }}"  
                   autocomplete="caption" autofocus>
 
               @if ($errors->has('caption'))
