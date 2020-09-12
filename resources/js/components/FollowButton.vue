@@ -12,7 +12,10 @@
 
         methods: {
             followUser() {
-                alert('inside');
+                axios.post('/follow/1')
+                    .then(response => {
+                        alert(response.data);
+                    });
             }
         }
     }
