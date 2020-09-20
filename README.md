@@ -19,6 +19,15 @@ php artisan serve
 
 Enter your browser to find the site at `http://127.0.0.1:8000/`.
 
+Then run in a new terminal tab:
+
+```
+npm run watch
+```
+
+This will get vue running. `watch` means you can change files and it will automatically update as you do so. If you don't want this feature you can use `npm run dev`.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
